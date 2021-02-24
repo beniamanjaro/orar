@@ -1,0 +1,185 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+body {
+    height: 100vh;
+    background: rgb(60,53,53);
+    background: linear-gradient(36deg, rgba(60,53,53,1) 0%, rgba(148,94,23,1) 100%);
+}
+
+h1 {
+    margin: auto;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.day {
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.container {
+    position: relative;
+    margin: auto;
+    height: 500px;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 
+      1fr
+      1fr
+      1fr
+      1fr
+      1fr
+      [d] 1fr
+      1fr
+      1fr;
+    gap: 0px 0px;
+  }
+  .luni { grid-area: 1 / 2 / 2 / 3; }
+  .marti { grid-area: 1 / 3 / 2 / 4; }
+  .miercuri { grid-area: 1 / 4 / 2 / 5; }
+  .joi { grid-area: 1 / 5 / 2 / 6; }
+  .vineri { grid-area: 1 / 6 / 2 / 7; }
+  .a { grid-area: 2 / 1 / 3 / 2; }
+  .b { grid-area: 3 / 1 / 4 / 2; }
+  .c { grid-area: 4 / 1 / 5 / 2; }
+  .d { grid-area: 5 / 1 / d / 2; }
+  .e { grid-area: d / 1 / 7 / 2; }
+  .f { grid-area: 7 / 1 / 8 / 2; }
+  .g { grid-area: 8 / 1 / 9 / 2; }
+  .softMatematic-curs { grid-area: 3 / 2 / 4 / 3; }
+  .geometrie-curs { grid-area: d / 2 / 7 / 3; }
+  .geometrie-seminar { grid-area: 7 / 2 / 8 / 3; }
+  .informatica-curs { grid-area: 3 / 3 / 4 / 4; }
+  .analizaMatematica-seminar { grid-area: 2 / 4 / 3 / 5; }
+  .analizaMatematica-curs { grid-area: d / 4 / 7 / 5; }
+  .algebra-curs { grid-area: d / 5 / 7 / 6; }
+  .informatica-seminar { grid-area: 7 / 5 / 8 / 6; }
+  .softMatematic-seminar { grid-area: 2 / 6 / 3 / 7; }
+  .algebra-seminar { grid-area: 3 / 6 / 4 / 7; }
+
+  .hour {
+      margin-top: 15px;
+      text-align: center;
+      color: white;
+      font-size: 25px;
+  }
+
+  .seminar {
+      margin: 5px;
+      font-size: 20px;
+      text-align: center;
+      color: white;
+      background-color: teal;
+      border: solid 1px white;
+      border-radius: 5px;
+  }
+
+  .curs {
+      margin: 5px;
+      font-size: 20px;
+      text-align: center;
+      color: black;
+      background-color:white;
+      border: solid 1px black;
+      border-radius: 5px;
+  }
+
+  .meet-seminar {
+    margin: 2px;
+    cursor: pointer;
+    font-size: 20px;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.meet-seminar:hover {
+  background-color: rgb(195, 195, 195);
+}
+
+.meet-seminar:active {
+  background-color: rgb(223, 223, 223);
+} 
+
+.meet-curs {
+    margin: 2px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(0, 128, 128);
+    border: none;
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.meet-curs:hover {
+  background-color: rgb(0, 128, 128, 0.7);
+}
+
+.meet-curs:active {
+  background-color: rgb(0, 128, 128, 1);
+}
+
+.classroom-seminar {
+    margin: 2px;
+    cursor: pointer;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.classroom-seminar:hover {
+    background-color: rgb(195, 195, 195);
+}
+
+.classroom-seminar:active {
+    background-color: rgb(223, 223, 223);
+}
+
+.classroom-curs {
+    margin: 2px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    background-color: teal;
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.classroom-curs:hover {
+    background-color: rgb(0, 128, 128, 0.7);
+}
+
+.classroom-curs:active {
+    background-color: rgb(0, 128, 128, 1);
+}
+
+.btn-meet {
+    display: flex;
+
+
+}
+
+.saptamana {
+    font-size: 30px;
+    color: white;
+    margin: 10px;
+}
