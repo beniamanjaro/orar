@@ -30,40 +30,35 @@ h1 {
     height: 500px;
     width: 1200px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 
-      1fr
-      1fr
-      1fr
-      1fr
-      1fr
-      [d] 1fr
-      1fr
-      1fr;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(9, 1fr);
     gap: 0px 0px;
   }
+  .a { grid-area: 2 / 1 / 3 / 2; }
+  .b { grid-area: 3 / 1 / 4 / 2; }
+  .c { grid-area: 4 / 1 / 5 / 2; }
+  .d { grid-area: 5 / 1 / 6 / 2; }
+  .e { grid-area: 6 / 1 / 7 / 2; }
+  .f { grid-area: 7 / 1 / 8 / 2; }
+  .g { grid-area: 8 / 1 / 9 / 2; }
+  .h { grid-area: 9 / 1 / 10 / 2; }
   .luni { grid-area: 1 / 2 / 2 / 3; }
   .marti { grid-area: 1 / 3 / 2 / 4; }
   .miercuri { grid-area: 1 / 4 / 2 / 5; }
   .joi { grid-area: 1 / 5 / 2 / 6; }
   .vineri { grid-area: 1 / 6 / 2 / 7; }
-  .a { grid-area: 2 / 1 / 3 / 2; }
-  .b { grid-area: 3 / 1 / 4 / 2; }
-  .c { grid-area: 4 / 1 / 5 / 2; }
-  .d { grid-area: 5 / 1 / d / 2; }
-  .e { grid-area: d / 1 / 7 / 2; }
-  .f { grid-area: 7 / 1 / 8 / 2; }
-  .g { grid-area: 8 / 1 / 9 / 2; }
   .softMatematic-curs { grid-area: 3 / 2 / 4 / 3; }
-  .geometrie-curs { grid-area: d / 2 / 7 / 3; }
+  .geometrie-curs { grid-area: 6 / 2 / 7 / 3; }
   .geometrie-seminar { grid-area: 7 / 2 / 8 / 3; }
   .informatica-curs { grid-area: 3 / 3 / 4 / 4; }
   .analizaMatematica-seminar { grid-area: 2 / 4 / 3 / 5; }
-  .analizaMatematica-curs { grid-area: d / 4 / 7 / 5; }
-  .algebra-curs { grid-area: d / 5 / 7 / 6; }
-  .informatica-seminar { grid-area: 7 / 5 / 8 / 6; }
+  .analizaMatematica-curs { grid-area: 6 / 4 / 7 / 5; }
+  .informatica-seminar { grid-area: 5 / 5 / 6 / 6; }
+  .algebra-curs { grid-area: 6 / 5 / 7 / 6; }
   .softMatematic-seminar { grid-area: 2 / 6 / 3 / 7; }
   .algebra-seminar { grid-area: 3 / 6 / 4 / 7; }
+  .analizaMatematica-seminar-saptimp { grid-area: 2 / 3 / 3 / 4; }
+  .analizaMatematica-curs-saptimp { grid-area: 6 / 3 / 7 / 4; }
 
   .hour {
       margin-top: 15px;
@@ -182,4 +177,12 @@ h1 {
     font-size: 30px;
     color: white;
     margin: 10px;
+}
+
+.saptimp {
+    background-color:   #ffffb3
+}
+
+.saptimp.seminar {
+    color: black;
 }

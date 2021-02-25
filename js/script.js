@@ -17,9 +17,13 @@ function ISO8601_week_no(dt)
 let today = new Date();
 console.log(ISO8601_week_no(today));
 
-if(ISO8601_week_no(today) % 2 == 0) {
+
+function checkWeek() {
+  if((ISO8601_week_no(today) - 1) % 2 == 0) {
     saptamana.innerHTML = "Saptamana para";
-} else {
+    } else {
     saptamana.innerHTML = "Saptamana impara";
+    }
 }
 
+checkWeek();
