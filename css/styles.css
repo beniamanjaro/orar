@@ -5,9 +5,9 @@
 }
 
 body {
-    height: 100vh;
     background: rgb(60,53,53);
     background: linear-gradient(36deg, rgba(60,53,53,1) 0%, rgba(148,94,23,1) 100%);
+    background-size: 1920px 1080px;
 }
 
 h1 {
